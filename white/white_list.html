@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset = "utf-8"/>
+   <style>
+      BODY {width: 500px; min-height: 250px;}
+      .box {
+         border-radius:15px;
+         border-width:3px;
+         resize: none;
+         width:98%;
+         font-size:14px;
+         font-family:nanumr;
+      }
+      textarea::placeholder{
+         color: #9b9b9b;
+         margin-top: 5px;
+         font-family:nanumr;
+      }
+      textarea:focus{
+         outline: none;
+      }
+      .close{
+         box-shadow:inset 0px 1px 0px 0px #ffffff;
+           background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+           background-color:#f9f9f9;
+           border-radius:6px;
+           border:1px solid #dcdcdc;
+           display:inline-block;
+           cursor:pointer;
+           color:#666666;
+           font-family:nanumr;
+           font-size:15px;
+           font-weight:bold;
+           padding:8px 20px;
+         text-decoration:none;
+         text-shadow:0px 1px 0px #ffffff;
+      }
+      .save{
+         box-shadow:inset 0px 1px 0px 0px #ffffff;
+           background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+           background-color:#f9f9f9;
+           border-radius:6px;
+           border:1px solid #dcdcdc;
+           display:inline-block;
+           cursor:pointer;
+           color:#666666;
+           font-family:nanumr;
+           font-size:15px;
+           font-weight:bold;
+           padding:8px 20px;
+         text-decoration:none;
+         
+           text-shadow:0px 1px 0px #ffffff;
+      }
+      .img{
+         border:none;
+         background-color:#ffffff;
+         margin-top:5px;
+         outline: none;
+      
+      }
+      .div{
+         text-align: center;
+         font-family:"jua";
+      }
+      .div1{
+         float: right;
+         width:30%;
+         margin-bottom:10px;
+         outline: none;
+      }
+   </style>
+   <script src="whitelist.js"></script>
+</head>
+<body>
+   <form name="white_box" method="get">
+      <div class="div">
+         <span style="font-size:25px;  text-align:center; font-weight: bold;">검사 제외 목록</span>
+         <button type="reset" class="img"><img src="./refresh.png" width="30" height="23" /></button>
+      </div>
+      <div>
+         <p><textarea  rows="10" class="box" placeholder=" ex) https://www.naver.com/&#13;&#10;      https://www.google.com/" id="url_list"></textarea></p>
+         <!-- <input type="submit" id="save" onClick="save_list()" value="저장" /> -->
+      </div>
+   </form>
+   <div class="div1">
+      <a href="../popup.html" class="close">닫기</a>
+      <input type="button" id="target" class="save"  value="저장" />
+   </div>
+   <script src="./script2.js"></script>
+   <script src="./script.js"></script>
+</body>
+</html>

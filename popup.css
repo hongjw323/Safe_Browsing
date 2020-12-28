@@ -1,0 +1,358 @@
+BODY {width: 400px; min-height: 400px;}
+@font-face {
+  src: url("/font/BMJUA_ttf.ttf");
+  font-family:"jua";
+}
+@font-face {
+    src: url("/font/NanumBarunpenB.ttf");
+    font-family:"nanumb";
+}
+@font-face {
+  src: url("/font/NaunmBarunpenR.ttf");
+  font-family:"nanumr";
+}
+
+*{
+    font-family:"jua";
+  margin:0; padding:0;
+  font-size:15px; 
+  line-height:1.3;
+}
+ul{list-style:none;}
+
+.tabmenu{ 
+  max-width:500px; 
+  margin: 0 auto; 
+  position:relative; 
+
+}
+
+.tabmenu ul li{
+  display:  inline-block;
+  width:50%; 
+  float:left;  
+  text-align:center; 
+  background :#ccc;
+  line-height:50px;
+}
+.tabmenu label{
+  display:block;
+  width:100%; 
+  height:40px;
+  line-height:40px;
+  font-size: 18px;
+}
+.tabCon label{
+  display:block;
+  width:100%; 
+  height:30px;
+  line-height:30px;
+}
+.tabCon2 label{
+  display:block;
+  width:100%; 
+  height:30px;
+  line-height:30px;
+}
+.tabCon3 label{
+  display:block;
+  width:100%; 
+  height:30px;
+  line-height:30px;
+}
+
+
+.tabmenu input{display:none;}
+.tabCon{
+   
+  display:none; 
+  text-align: left;
+  padding: 40px;
+  position:absolute; 
+  left:0px; top:35px; 
+  box-sizing: border-box; 
+  /*border : 5px solid #f9f9f9;*/
+}
+.tabCon2{
+  display:none; 
+  text-align: :left; 
+  padding: 40px;
+  position:absolute; 
+  left:235px; top:35px; 
+  box-sizing: border-box; 
+  /*border : 5px solid #f9f9f9;*/
+}
+.tabCon3{
+  display:none; 
+  color:#FF0000;
+  text-align: :left; 
+  padding: 10px;
+  position:absolute; 
+  left :85px; top:250px; 
+  box-sizing: border-box; 
+  /*border : 5px solid #f9f9f9;*/
+}
+
+
+.tabCon p{
+
+  font-size:21px;
+}
+.tabCon2 p{
+
+  font-size:21px;
+}
+.tabCon3 p{
+
+  font-size:19px;
+}
+.tabmenu input:checked ~ label{
+  background:white;
+}
+.tabmenu input:checked ~ .tabCon{
+  display:block;
+}
+.tabmenu input:checked ~ .tabCon2{
+  display:block;
+}
+.tabmenu input:checked ~ .tabCon3{
+  display:block;
+}
+.onoffswitch {
+    position: absolute; width: 88px;
+    left : 260px;
+    top: 35px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+    font-family:"jua";
+}
+.onoffswitch-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #31cc4d; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #E0003C; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 58px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+}
+
+.onoffswitch2 {
+    position: absolute; width: 88px;
+    left : 260px;
+    top: 99px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch2-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label2 {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner2 {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner2:before, .onoffswitch-inner2:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner2:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #31cc4d; color: #FFFFFF;
+}
+.onoffswitch-inner2:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #E0003C; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch2 {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 58px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch2-checkbox:checked + .onoffswitch-label2 .onoffswitch-inner2 {
+    margin-left: 0;
+}
+.onoffswitch2-checkbox:checked + .onoffswitch-label2 .onoffswitch-switch2 {
+    right: 0px; 
+}
+
+.onoffswitch3 {
+    position: absolute; width: 88px;
+    left : 260px;
+    top: 165px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch3-checkbox {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+.onoffswitch-label3 {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #999999; border-radius: 20px;
+}
+.onoffswitch-inner3 {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner3:before, .onoffswitch-inner3:after {
+    display: block; float: left; width: 50%; height: 30px; padding: 0; line-height: 30px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner3:before {
+    content: "ON";
+    padding-left: 10px;
+    background-color: #31cc4d; color: #FFFFFF;
+}
+.onoffswitch-inner3:after {
+    content: "OFF";
+    padding-right: 10px;
+    background-color: #E0003C; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch3 {
+    display: block; width: 18px; margin: 6px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 58px;
+    border: 2px solid #999999; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch3-checkbox:checked + .onoffswitch-label3 .onoffswitch-inner3 {
+    margin-left: 0;
+}
+.onoffswitch3-checkbox:checked + .onoffswitch-label3 .onoffswitch-switch3 {
+    right: 0px; 
+}
+.myButton {
+  box-shadow:inset 0px 1px 0px 0px #bbdaf7;
+  background:linear-gradient(to bottom, #79bbff 5%, #378de5 100%);
+  background-color:#79bbff;
+  border-radius:12px;
+  border:2px solid #84bbf3;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:nanumr;
+  font-size:14px;
+  font-weight:bold;
+  padding:8px 18px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #528ecc;
+}
+.myButton:hover {
+  background:linear-gradient(to bottom, #378de5 5%, #79bbff 100%);
+  background-color:#378de5;
+}
+.myButton:active {
+  position:relative;
+  top:1px;
+}
+.myButton3 {
+  box-shadow:inset 0px 1px 0px 0px #f29c93;
+  background:linear-gradient(to bottom, #fe1a00 5%, #ce0100 100%);
+  background-color:#fe1a00;
+  border-radius:6px;
+  border:1px solid #d83526;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #b23e35;
+}
+.myButton3:hover {
+  background:linear-gradient(to bottom, #ce0100 5%, #fe1a00 100%);
+  background-color:#ce0100;
+}
+.myButton3:active {
+  position:relative;
+  top:1px;
+}
+
+a.myButton {
+  margin-bottom: -2px;
+  margin-top: 10px;
+}
+
+a.myButton3 {
+  margin-top: 15px;
+}
+
+
+
+.myButton2 {
+  box-shadow:inset 0px 1px 0px 0px #ffffff;
+  background:linear-gradient(to bottom, #f9f9f9 5%, #e9e9e9 100%);
+  background-color:#f9f9f9;
+  border-radius:6px;
+  border:1px solid #dcdcdc;
+  display:inline-block;
+  cursor:pointer;
+  color:#666666;
+  font-family:nanumr;
+  font-size:15px;
+  font-weight:bold;
+  padding:8px 20px;
+  text-decoration:none;
+  text-shadow:0px 1px 0px #ffffff;
+}
+.myButton2:hover {
+  background:linear-gradient(to bottom, #e9e9e9 5%, #f9f9f9 100%);
+  background-color:#e9e9e9;
+}
+.myButton2:active {
+  position:relative;
+  top:1px;
+}
+a.myButton2 {
+  margin-left: 73px;
+  margin-top: 10px;
+}

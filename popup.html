@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>A! safe browsing</title>
+	<link rel="stylesheet" type="text/css" href="popup.css">
+	<meta charset="utf-8">
+</head>
+<body>
+<div id="popup">
+	<div id="logo" style="text-align: center;">
+		<a href="#">
+			<img src="/icon/safe browsing.png" width="300" alt="">
+		</a>
+	</div>
+	<div class="tabmenu">
+		<ul>
+			<li id="tab1">
+				<input type="radio" checked name="tabmenu" id="tabmenu1">
+					<label for="tabmenu1">차단 옵션</label>
+					<div class="tabCon">
+						<p>
+					브라우저 자체 취약점 
+						</p>
+                    <br> <br> 
+						<p>
+					피싱 공격 
+					   </p>			
+					<br> <br> 
+					   <p>
+					스크립트 기반 웹 공격 <br><br>
+					<a class="myButton" id="details">더보기</a>
+					<a href="./white/white_list.html" class="myButton2">제외 사이트 설정</a>
+					<div class="onoffswitch">
+    				<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" tabindex="0">
+    				<label class="onoffswitch-label" for="myonoffswitch">
+        			<span class="onoffswitch-inner"></span>
+        			<span class="onoffswitch-switch"></span>
+    				</label>
+					</div>
+					<div class="onoffswitch2">
+    				<input type="checkbox" name="onoffswitch2" class="onoffswitch2-checkbox" id="myonoffswitch2" tabindex="0">
+    				<label class="onoffswitch-label2" for="myonoffswitch2">
+        			<span class="onoffswitch-inner2"></span>
+        			<span class="onoffswitch-switch2"></span>
+    				</label>
+					</div>
+					<div class="onoffswitch3">
+    				<input type="checkbox" name="onoffswitch3" class="onoffswitch3-checkbox" id="myonoffswitch3" tabindex="0">
+    				<label class="onoffswitch-label3" for="myonoffswitch3">
+        			<span class="onoffswitch-inner3"></span>
+        			<span class="onoffswitch-switch3"></span>
+    				</label>
+					</div>
+				</div>
+			</li>
+<li id="tab2">
+				<input type="radio" name="tabmenu" id="tabmenu2">
+				<label for="tabmenu2">차단 결과</label>
+				<div class="tabCon">
+					<p>
+						브라우저 자체 취약점
+					</p>
+						<br> <br> 
+					<p>
+						피싱 공격
+					</p>			
+						<br> <br> 
+					<p>
+						스크립트 기반 웹 공격 
+					</p>
+				</div>
+				<div class="tabCon2">
+					<p id="browser" style = "color:blue";>
+						정상
+					</p>
+					<br> <br>
+					<p id="phishing" style = "color:blue";> 
+						정상
+					</p>
+					<br> <br>
+					<p id="script" style = "color:blue";>
+						정상 
+					</p>
+				</div>
+				<div class="tabCon3">
+				<p id="result" style = "color:blue";>
+				Safe Browsing 검사 결과<br> 
+				정상페이지로 판단되었습니다.
+				</p>
+				<a class="myButton3" id="details2">더보기</a>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<!-- <a href="./white/white_list.html"><button>WHITE LIST</button></a> -->
+</div>
+</body>
+	<script src="popup.js"></script>
+	<script src="checkbox.js"></script>
+	<script src="contentScript.js"></script>
+</html>
